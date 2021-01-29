@@ -4,5 +4,5 @@ module.exports = {
     author: "senixus",
     description: "Simple portfolio with GatsbyJS",
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-transition-link"],
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-transition-link","gatsby-plugin-react-helmet"],
 };

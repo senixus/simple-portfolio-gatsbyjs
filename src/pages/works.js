@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Works from "../components/Works/Works";
 
 const WorksPage = () => {
   return (
     <Layout>
-      <title>Works Page</title>
+      <Seo title="Works" />
       <Works />
     </Layout>
   );
