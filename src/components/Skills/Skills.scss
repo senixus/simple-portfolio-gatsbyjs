@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.skills {
+  width: 85%;
+
+  &-content {
+    @include main-section;
+
+    &__item {
+      @include utilities;
+      display: flex;
+    }
+  }
+
+  &__section {
+    width: 40%;
+    position: relative;
+
+    &::after {
+      border: 3px solid $primary-color-yellow;
+      height: 100%;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      @include head;
+    }
+
+    &-about {
+      p {
+        margin: 1rem 0.5rem;
+        color: $primary-color-white;
+        letter-spacing: 2px;
+        font-size: $font-text-size;
+
+        a {
+          color: $primary-color-yellow;
+          font-size: $font-text-size;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  &__bars {
+    margin-left: 3rem;
+    width: 55%;
+
+    h2 {
+      color: $primary-color-yellow;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    .skill-bars {
+      margin: 0.7rem 0;
+      &-head {
+        color: $primary-color-white;
+        font-size: $font-text-size;
+        letter-spacing: 1px;
+      }
+    }
+
+    .progress {
+      background-color: $secondary-color-dark;
+      width: 100%;
+      margin: 0.5rem 0;
+
+      &-bar {
+        text-align: center;
+      }
+      .html {
+        @include skills(80%);
+      }
+      .css {
+        @include skills(65%);
+      }
+      .js {
+        @include skills(70%);
+      }
+      .react {
+        @include skills(50%);
+      }
+      .bootstrap {
+        @include skills(75%);
+      }
+    }
+  }
+}

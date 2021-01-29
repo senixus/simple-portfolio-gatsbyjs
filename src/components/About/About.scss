@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.about {
+  width: 85%;
+
+  &-content {
+    @include main-section;
+  }
+  h1 {
+    @include head;
+  }
+
+  &-section {
+    @include utilities;
+    width: 50%;
+
+    p {
+      color: $primary-color-white;
+      letter-spacing: 1px;
+      padding: 1rem 0;
+      font-weight: lighter;
+      font-size: 1.3rem;
+    }
+  }
+}

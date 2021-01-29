@@ -1,0 +1,88 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  background-color: $secondary-color-dark;
+  width: 15%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &__logo {
+    line-height: 2;
+
+    &-head {
+    }
+
+    &-link {
+      color: $primary-color-white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 3rem;
+      position: relative;
+      letter-spacing: 2px;
+
+      &::before {
+        background-color: rgba(255, 255, 77, 0.5);
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: -12px;
+        top: 6px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+    margin-top: 10rem;
+
+    &-item {
+      padding: 1rem 0;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $primary-color-white;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $primary-color-yellow;
+      }
+    }
+  }
+}
+
+.active-link {
+  color: $primary-color-yellow;
+}
+
+.bars {
+  cursor: pointer;
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    width: 25px;
+    height: 2px;
+    background-color: $primary-color-white;
+    content: "";
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+.contact {
+  width: 85%;
+
+  &-content {
+    @include main-section;
+  }
+
+  &-section {
+    @include utilities;
+
+    h1 {
+      @include head;
+    }
+  }
+
+  .form {
+    &__group {
+      display: flex;
+
+      &-label {
+        margin: 0.5rem 0;
+      }
+      &-control {
+        margin: 1rem 0;
+        width: 50%;
+        overflow: hidden;
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          outline: none;
+          padding: 0.4rem 0.8rem;
+          font-size: 1.2rem;
+          background-color: $secondary-color-dark;
+          color: $primary-color-white;
+          border: none;
+          border-bottom: 2px solid $primary-color-yellow;
+          width: 100%;
+        }
+
+        textarea {
+          height: 175px;
+        }
+
+        .contact-btn {
+          font-size: 1.2rem;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 0.6rem 2.5rem;
+          border: 2px solid $primary-color-yellow;
+          background-color: $primary-color-dark;
+          color: $primary-color-white;
+          transition: all 0.3s;
+          text-align: center;
+          letter-spacing: 1px;
+
+          &:hover {
+            background-color: $primary-color-yellow;
+            color: $primary-color-dark;
+          }
+        }
+      }
+
+      &-label label {
+        color: $primary-color-white;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.pl {
+  padding-left: 0.5rem;
+}

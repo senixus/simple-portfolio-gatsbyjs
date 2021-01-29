@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "my-portfolio",
+    title: "Front End Developer",
+    author: "senixus",
+    description: "Simple portfolio with GatsbyJS",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-transition-link"],
 };

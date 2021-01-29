@@ -1,0 +1,25 @@
+@import "./variables";
+
+@mixin main-section {
+  background-color: $primary-color-dark;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+@mixin head {
+  color: $primary-color-yellow;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+@mixin utilities {
+  padding-left: 7rem;
+  padding-top: 10rem;
+}
+
+@mixin skills($width) {
+  width: $width;
+  background-color: $primary-color-yellow;
+  color: $primary-color-dark;
+}

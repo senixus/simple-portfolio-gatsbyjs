@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.works {
+  width: 85%;
+
+  &-content {
+    @include main-section;
+  }
+
+  &-section {
+    @include utilities;
+  }
+  h1 {
+    @include head;
+  }
+}
