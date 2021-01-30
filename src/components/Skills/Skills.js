@@ -10,18 +10,19 @@ const Skills = () => {
             <h1>Skills & Experince</h1>
             <div className="skills__section-about">
               <p>
-                The main area of my expertise is front end development (client
-                side of the web).
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
               </p>
               <p>
-                HTML, CSS, JS (TypeScript), building small and medium web apps
-                with Angular 2+, custom plugins, features, animations, and
-                coding interactive layouts.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
               </p>
               <p>
-                HTML, CSS, JS (TypeScript), building small and medium web apps
-                with Angular 2+, custom plugins, features, animations, and
-                coding interactive layouts.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
               </p>
               <p>
                 <AniLink swipe top="entry" to="/contact">
