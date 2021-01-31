@@ -8,24 +8,16 @@
     @include main-section;
 
     &__item {
-      @include utilities;
+      //  @include utilities;
+      padding: 6rem 5rem 0 6rem;
       display: flex;
     }
   }
 
   &__section {
-    width: 40%;
-    position: relative;
+    width: 50%;
 
-    &::after {
-      border: 3px solid $primary-color-yellow;
-      height: 100%;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%);
-    }
+    border-right: 5px solid $primary-color-yellow;
 
     h1 {
       @include head;
@@ -33,23 +25,17 @@
 
     &-about {
       p {
-        margin: 1rem 0.5rem;
+        margin: 0.8rem 1.25rem 0 0;
         color: $primary-color-white;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: $font-text-size;
-
-        a {
-          color: $primary-color-yellow;
-          font-size: $font-text-size;
-          letter-spacing: 2px;
-        }
       }
     }
   }
 
   &__bars {
     margin-left: 3rem;
-    width: 55%;
+    width: 50%;
 
     h2 {
       color: $primary-color-yellow;
@@ -88,6 +74,163 @@
       }
       .bootstrap {
         @include skills(75%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skills-content__item {
+    padding: 5rem 3rem 0 3rem !important;
+
+    h1 {
+      font-size: 3.2rem !important;
+    }
+  }
+  .skills__section {
+    &-about {
+      p {
+        font-size: 1.15rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skills {
+    width: 80%;
+
+    &-content__item {
+      display: block;
+      padding: 1rem 3rem 0 3rem !important;
+
+      h1 {
+        font-size: 3.2rem !important;
+      }
+    }
+
+    &__section {
+      width: 100%;
+      border-right: none;
+
+      border-bottom: 4px solid $primary-color-yellow;
+      &-about {
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+
+    &__bars {
+      width: 100%;
+      margin-left: 0 !important;
+      padding: 1rem 0;
+
+      h2 {
+        font-size: 3.2rem;
+      }
+
+      .skill-bars {
+        margin: 0.5rem 0;
+        &-head {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    width: 100%;
+
+    &-content {
+      height: 100% !important;
+    }
+    &-content__item {
+      display: block;
+      padding: 5rem 2rem 0 2rem !important;
+
+      h1 {
+        font-size: 2.2rem !important;
+      }
+    }
+
+    &__section {
+      width: 100%;
+      border-right: none;
+      border-bottom: 4px solid $primary-color-yellow;
+
+      &-about {
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+
+    &__bars {
+      width: 100%;
+      margin-left: 0 !important;
+      padding: 1rem 0;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .skill-bars {
+        margin: 0.6rem 0;
+        &-head {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .skills {
+    width: 100%;
+
+    &-content {
+      height: 100% !important;
+    }
+
+    &-content__item {
+      display: block;
+      padding: 5rem 1.5rem 0 1.5rem !important;
+
+      h1 {
+        font-size: 1.7rem !important;
+      }
+    }
+
+    &__section {
+      width: 100%;
+      border-right: none;
+      border-bottom: 4px solid $primary-color-yellow;
+
+      &-about {
+        p {
+          font-size: 1rem !important;
+          text-align: justify;
+        }
+      }
+    }
+
+    &__bars {
+      width: 100%;
+      margin-left: 0 !important;
+      padding: 1rem 0;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .skill-bars {
+        margin: 0.5rem 0;
+        &-head {
+          font-size: 1rem;
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 import React from "react";
 import "./Skills.scss";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 const Skills = () => {
   return (
     <main className="skills">
       <div className="skills-content">
         <div className="skills-content__item">
           <div className="skills__section">
-            <h1>Skills & Experince</h1>
+            <h1>Skills & Experience</h1>
             <div className="skills__section-about">
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -23,11 +23,6 @@ const Skills = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
-              </p>
-              <p>
-                <AniLink swipe top="entry" to="/contact">
-                  Contact me
-                </AniLink>
               </p>
             </div>
           </div>

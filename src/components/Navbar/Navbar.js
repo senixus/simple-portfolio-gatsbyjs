@@ -69,6 +69,13 @@ const Navbar = () => {
             Contact
           </AniLink>
         </li>
+
+        <li className="navbar__nav-item">
+          <div className="close">
+            <div className="close-1"></div>
+            <div className="close-2"></div>
+          </div>
+        </li>
         <li className="navbar__nav-item">
           <div className="bars">
             <div className="bar-1"></div>

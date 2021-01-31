@@ -15,3 +15,40 @@
     @include head;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .works {
+    width: 80%;
+    h1 {
+      font-size: 3.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .works {
+    width: 100%;
+
+    &-section {
+      padding: 7rem 5rem 0 5rem;
+      h1 {
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .works {
+    width: 100%;
+
+    &-section {
+      text-align: center;
+      padding: 7rem 4rem 0 4rem;
+
+      h1 {
+        font-size: 2.2rem !important;
+      }
+    }
+  }
+}
