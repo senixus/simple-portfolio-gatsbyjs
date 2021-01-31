@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import * as FaIcons from "react-icons/fa";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const showSideMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="navbar">
+    <nav className={isOpen ? "mobile-menu" : "navbar"}>
       <div className="navbar__logo">
         <h1 className="navbar__logo-head">
           <AniLink swipe top="entry" to="/" className="navbar__logo-link">
@@ -13,7 +18,7 @@ const Navbar = () => {
           </AniLink>
         </h1>
       </div>
-      <ul className="navbar__nav">
+      <ul className={isOpen ? "mobile-menu-nav" : "navbar__nav"}>
         <li className="navbar__nav-item">
           <AniLink
             swipe
@@ -69,54 +74,10 @@ const Navbar = () => {
             Contact
           </AniLink>
         </li>
-
-        <li className="navbar__nav-item">
-          <div className="close">
-            <div className="close-1"></div>
-            <div className="close-2"></div>
-          </div>
-        </li>
-        <li className="navbar__nav-item">
-          <div className="bars">
-            <div className="bar-1"></div>
-            <div className="bar-2"></div>
-            <div className="bar-3"></div>
-          </div>
-        </li>
       </ul>
-
-      {/* <ul className="social__media">
-        <li className="social__media-list">
-          <a
-            className="social__media-links"
-            href="/github"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li className="social__media-list">
-          <a
-            className="social__media-links"
-            href="/linkedin"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li className="social__media-list">
-          <a
-            className="social__media-links"
-            href="/twitter"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-      </ul> */}
+      <div className="hamburger" onClick={showSideMenu}>
+        {isOpen ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}
+      </div>
     </nav>
   );
 };

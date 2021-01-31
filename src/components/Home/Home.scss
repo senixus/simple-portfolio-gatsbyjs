@@ -70,10 +70,10 @@
 
 @media screen and (max-width: 992px) {
   .home {
-    width: 80%;
+    width: 80% !important;
 
     .developer {
-      padding: 6rem 4rem 0 4rem;
+      padding: 8rem 4rem 0 4rem;
 
       span {
         font-size: 3rem;
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    width: 100%;
+    width: 100% !important;
 
     .developer {
       padding: 8rem 3rem 0 3rem;
