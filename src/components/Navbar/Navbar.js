@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import * as FaIcons from "react-icons/fa";
 
@@ -8,6 +7,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showSideMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const handleScreenSize = (e) => {
+      if (e.target.innerWidth >= 768) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleScreenSize);
+    return () => window.removeEventListener("resize", handleScreenSize);
+  }, [isOpen]);
 
   return (
     <nav className={isOpen ? "mobile-menu" : "navbar"}>

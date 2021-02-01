@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
     "env-cmd": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.9.0",
