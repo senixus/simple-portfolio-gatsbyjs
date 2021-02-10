@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.error {
+  width: 85%;
+  padding-left: 7rem;
+  padding-top: 7rem;
+  background-color: $primary-color-dark;
+
+  h1 {
+    @include head;
+  }
+
+  p {
+    color: $primary-color-white;
+    font-size: $font-text-size;
+  }
+
+  a {
+    color: $primary-color-white;
+    margin-top: 2rem;
+    display: inline-block;
+
+    &:hover {
+      color: $primary-color-yellow;
+    }
+  }
+}
