@@ -66,8 +66,8 @@
   flex-direction: column;
   padding: 0 0.5rem;
   align-items: center;
-  background-color: rgba(5, 5, 5, 0.8) !important;
-  animation: entry 0.6s ease-out;
+  background-color: $secondary-color-dark !important;
+  animation: entry 0.5s ease-out;
 
   &-nav {
     display: flex;
