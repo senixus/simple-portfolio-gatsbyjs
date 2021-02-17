@@ -5,10 +5,12 @@
   width: 85%;
 
   &-content {
-    @include main-section;
+    background-color: $primary-color-dark;
+    // height: 100%;
+    width: 100%;
+    min-height: 100%;
 
     &__item {
-      //  @include utilities;
       padding: 6rem 5rem 0 6rem;
       display: flex;
     }
@@ -145,7 +147,7 @@
     width: 100%;
 
     &-content {
-      height: 100vh !important;
+      height: 100% !important;
     }
     &-content__item {
       display: block;
@@ -192,7 +194,7 @@
     width: 100%;
 
     &-content {
-      height: 100vh !important;
+      height: 100% !important;
     }
 
     &-content__item {
