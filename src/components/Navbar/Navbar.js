@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScreenSize = (e) => {
-      if (e.target.innerWidth >= 768) {
+      if (e.target.innerWidth >= 530) {
         setIsOpen(false);
       }
     };
