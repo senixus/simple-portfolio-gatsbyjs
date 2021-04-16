@@ -1,1 +1,1 @@
-Development is going to continue.
+Simple portfolio website with GatsbyJS
